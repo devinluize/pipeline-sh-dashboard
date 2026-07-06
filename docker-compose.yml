@@ -1,0 +1,9 @@
+services:
+  pipeline-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pipeline_dashboard_app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
